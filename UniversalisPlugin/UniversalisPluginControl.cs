@@ -155,7 +155,7 @@ namespace UniversalisPlugin
                     MessageBox.Show(
                         "The Universalis plugin needs to be updated. Please download an updated version from the GitHub releases page.",
                         "Universalis plugin update", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
-                    Process.Start("https://github.com/goaaats/universalis_act_plugin/releases/latest");
+                    Process.Start("https://github.com/Ra-Workspace/universalis_act_plugin/releases/latest");
 
                     Log("Plugin needs update.");
                     lblStatus.Text = "Needs update";
@@ -249,7 +249,7 @@ namespace UniversalisPlugin
             {
                 var remoteVersion =
                     client.DownloadString(
-                        "https://raw.githubusercontent.com/goaaats/universalis_act_plugin/master/version");
+                        "https://raw.githubusercontent.com/Ra-Workspace/universalis_act_plugin/master/version");
 
                 return !remoteVersion.StartsWith(GetAssemblyVersion());
             }

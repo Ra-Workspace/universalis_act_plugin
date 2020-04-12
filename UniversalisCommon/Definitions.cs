@@ -13,7 +13,7 @@ namespace UniversalisPlugin
         public short MarketBoardHistory = 0x1F7;
         public short ContentIdNameMapResp = 0x172;
 
-        private static readonly Uri DefinitionStoreUrl = new Uri("https://raw.githubusercontent.com/goaaats/universalis_act_plugin/master/definitions.json");
+        private static readonly Uri DefinitionStoreUrl = new Uri("https://raw.githubusercontent.com/Ra-Workspace/universalis_act_plugin/master/definitions-kr.json");
 
         public static string GetJson() => JsonConvert.SerializeObject(new Definitions());
 
